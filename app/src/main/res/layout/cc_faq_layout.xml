@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/searchtexthint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layerType="software"
+            android:paddingLeft="25dp"
+            android:textColor="#4282d0"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@android:color/transparent">
+
+                    <EditText
+                        android:id="@+id/searchedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Search by Keyword"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colorPrimary" />
+                    <!--<SearchView
+                        android:id="@+id/search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animationCache="false"
+                        android:background="@android:color/white"
+                        android:paddingLeft="05dp"
+                        android:searchIcon="@null"
+                        android:showDividers="end"
+                        android:visibility="gone" />
+-->
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/cleartext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text="X"
+                    android:textColor="@color/red"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/faqbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/transparent"
+                    android:text="x"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="6"
+            android:background="@drawable/shapewhite_roundededgw2"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <ExpandableListView
+                android:id="@+id/listfaq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/shapewhite_roundededgw2"
+                android:divider="#96BCB7"
+                android:dividerHeight="1dp"
+                android:layoutDirection="rtl"
+                android:paddingLeft="05dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

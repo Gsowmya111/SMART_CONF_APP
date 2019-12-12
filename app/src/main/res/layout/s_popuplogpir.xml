@@ -1,0 +1,1460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popupbg"
+    android:gravity="center">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="6dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardcancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    card_view:cardBackgroundColor="@color/colorPrimaryDark"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:shadowColor="@color/colorshadow"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.5"
+                        android:shadowRadius="2"
+                        android:text="@string/cancel"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/popuptext"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/pirname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:shadowColor="@color/colorshadow"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.5"
+                    android:shadowRadius="2"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/popuptext"
+                    android:textStyle="bold" />
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:visibility="invisible"
+                    card_view:cardBackgroundColor="@color/colorPrimaryDark"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/temptext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:shadowColor="@color/colorshadow"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.5"
+                        android:shadowRadius="2"
+                        android:text="@string/cancel"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/popuptext"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/temp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/temp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    card_view:cardBackgroundColor="@color/colorPrimaryDark"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:shadowColor="@color/colorshadow"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.5"
+                        android:shadowRadius="2"
+                        android:text="@string/ok"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/popuptext"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/cardcancel"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/black" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs_custom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabContentStart="10dp"
+                    app:tabGravity="fill"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/colorRed" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/devicefoundlay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/roomname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:gravity="start|center"
+                                android:padding="5dp"
+                                android:shadowColor="@color/colorshadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="1"
+                                android:text="@string/room_name"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/popuptext"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+
+                            <TextView
+                                android:id="@+id/roomnameval"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_toEndOf="@+id/roomname"
+                                android:background="@android:color/transparent"
+                                android:gravity="start|center"
+                                android:padding="5dp"
+                                android:shadowColor="@color/colorshadow"
+                                android:shadowDx="1.5"
+                                android:shadowDy="1.5"
+                                android:shadowRadius="2"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/popuptext"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+
+                            <TextView
+                                android:id="@+id/devicename"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/roomnameval"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:gravity="start|center"
+                                android:padding="5dp"
+                                android:shadowColor="@color/colorshadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="1"
+                                android:text="@string/device_name"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/popuptext"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+
+                            <TextView
+                                android:id="@+id/devicenameval"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/roomnameval"
+                                android:layout_gravity="center"
+                                android:layout_toEndOf="@+id/devicename"
+                                android:background="@android:color/transparent"
+                                android:gravity="start|center"
+                                android:padding="5dp"
+                                android:shadowColor="@color/colorshadow"
+                                android:shadowDx="1.5"
+                                android:shadowDy="1.5"
+                                android:shadowRadius="2"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/popuptext"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/swbopertion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/devicenameval">
+
+
+                                <RelativeLayout
+                                    android:id="@+id/motionlayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@drawable/border"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/switchon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignEnd="@+id/switchoff"
+                                        android:layout_alignStart="@+id/switchoff"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/on_switches"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/switchonval"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/switchon"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/switchoff"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/switchonval"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/off_switches"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/switchoffval"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/switchonval"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/switchoff"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="20dp"
+                                    android:background="@color/white"
+                                    android:gravity="top|start"
+                                    android:shadowColor="@color/colorshadow"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.5"
+                                    android:shadowRadius="2"
+                                    android:text="@string/motion"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/popuptext"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:id="@+id/idlelayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/motionlayout"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="12dp"
+
+                                    android:background="@drawable/border"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/switchon_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignEnd="@+id/switchoff_idle"
+                                        android:layout_alignStart="@+id/switchoff_idle"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/on_switches"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold"
+                                        tools:ignore="RtlHardcoded" />
+
+
+                                    <TextView
+                                        android:id="@+id/switchonval_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/switchon_idle"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/switchoff_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/switchonval_idle"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/off_switches"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/switchoffval_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/switchonval_idle"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/switchoff_idle"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/motionlayout"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="20dp"
+                                    android:background="@color/white"
+                                    android:gravity="top|left"
+                                    android:shadowColor="@color/colorshadow"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.5"
+                                    android:shadowRadius="2"
+                                    android:text="@string/idle"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/popuptext"
+                                    android:textStyle="bold"
+                                    tools:ignore="RtlHardcoded" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rgboperation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/devicenameval"
+                                android:visibility="gone">
+
+                                <RelativeLayout
+                                    android:id="@+id/motionlayoutrgb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@drawable/border"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/rgbpower"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/power"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/rgbpowerval"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/rgbpower"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/rgbcolor"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbpowerval"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="RGB Colour"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/rgbcolorval"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbpowerval"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/rgbcolor"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/rgbeffects"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbcolorval"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/rgb_effects"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/rgbeffectsval"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbcolorval"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/rgbcolor"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/rgbbrightness"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbeffectsval"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/brightness"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/rgbbrightnessval"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbeffectsval"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/rgbcolor"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/rgbtransaction"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbbrightnessval"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/transaction"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/rgbtransactionval"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbbrightnessval"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/rgbcolor"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="20dp"
+                                    android:background="@color/white"
+                                    android:gravity="top|start"
+                                    android:shadowColor="@color/colorshadow"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.5"
+                                    android:shadowRadius="2"
+                                    android:text="@string/motion"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/popuptext"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:id="@+id/motionlayoutrgb_idle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/motionlayoutrgb"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@drawable/border"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/rgbpower_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/power"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/rgbpowerval_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/rgbpower_idle"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/rgbcolor_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbpowerval_idle"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="RGB Colour"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/rgbcolorval_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbpowerval_idle"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/rgbcolor_idle"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/rgbeffects_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbcolorval_idle"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/rgb_effects"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/rgbeffectsval_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbcolorval_idle"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/rgbcolor_idle"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/rgbbrightness_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbeffectsval_idle"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/brightness"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/rgbbrightnessval_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbeffectsval_idle"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/rgbcolor_idle"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/rgbtransaction_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbbrightnessval_idle"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/transaction"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/rgbtransactionval_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rgbbrightnessval_idle"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/rgbcolor_idle"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/motionlayoutrgb"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="20dp"
+                                    android:background="@color/white"
+                                    android:gravity="top|start"
+                                    android:shadowColor="@color/colorshadow"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.5"
+                                    android:shadowRadius="2"
+                                    android:text="@string/idle"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/popuptext"
+                                    android:textStyle="bold" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/dimmeropertion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/devicenameval"
+                                android:visibility="gone">
+
+
+                                <RelativeLayout
+                                    android:id="@+id/motionlayout_dimmer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@drawable/border"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/dimmerpower"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/dimmer_power"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/dimmerpowerval"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/dimmerpower"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/dimmerbrightness"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@+id/dimmerpower"
+
+                                        android:layout_alignRight="@+id/dimmerpower"
+                                        android:layout_below="@+id/dimmerpowerval"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/brightness"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/dimmerbrightnessval"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/dimmerpowerval"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/dimmerbrightness"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="20dp"
+                                    android:background="@color/white"
+                                    android:gravity="top|start"
+                                    android:shadowColor="@color/colorshadow"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.5"
+                                    android:shadowRadius="2"
+                                    android:text="@string/motion"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/popuptext"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:id="@+id/idlelayout_dimmer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/motionlayout_dimmer"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="12dp"
+
+                                    android:background="@drawable/border"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/dimmerpower_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/dimmer_power"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold"
+                                        tools:ignore="RtlHardcoded" />
+
+
+                                    <TextView
+                                        android:id="@+id/dimmerpowerval_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/dimmerpower_idle"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/dimmerbrightness_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@+id/dimmerpower_idle"
+                                        android:layout_alignRight="@+id/dimmerpower_idle"
+                                        android:layout_below="@+id/dimmerpowerval_idle"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/brightness"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/dimmerbrightnessval_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/dimmerpowerval_idle"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/dimmerbrightness_idle"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/motionlayout_dimmer"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="20dp"
+                                    android:background="@color/white"
+                                    android:gravity="top|left"
+                                    android:shadowColor="@color/colorshadow"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.5"
+                                    android:shadowRadius="2"
+                                    android:text="@string/idle"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/popuptext"
+                                    android:textStyle="bold"
+                                    tools:ignore="RtlHardcoded" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/curtainopertion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/devicenameval"
+                                android:visibility="gone">
+
+
+                                <RelativeLayout
+                                    android:id="@+id/motionlayout_curtain"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@drawable/border"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/curtainaction"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/curtain_action"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/curtainactionval"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/curtainaction"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="20dp"
+                                    android:background="@color/white"
+                                    android:gravity="top|start"
+                                    android:shadowColor="@color/colorshadow"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.5"
+                                    android:shadowRadius="2"
+                                    android:text="@string/motion"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/popuptext"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:id="@+id/idlelayout_curtain"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/motionlayout_curtain"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="12dp"
+
+                                    android:background="@drawable/border"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/curtainaction_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/curtain_action"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold"
+                                        tools:ignore="RtlHardcoded" />
+
+
+                                    <TextView
+                                        android:id="@+id/curtainactionval_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/curtainaction_idle"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/motionlayout_curtain"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="20dp"
+                                    android:background="@color/white"
+                                    android:gravity="top|left"
+                                    android:shadowColor="@color/colorshadow"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.5"
+                                    android:shadowRadius="2"
+                                    android:text="@string/idle"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/popuptext"
+                                    android:textStyle="bold"
+                                    tools:ignore="RtlHardcoded" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/otheroperation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/devicenameval"
+                                android:visibility="gone">
+
+                                <RelativeLayout
+                                    android:id="@+id/motionlayoutothers"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@drawable/border"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/otherspower"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/power1"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/otherspowerval"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/otherspower"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="20dp"
+                                    android:background="@color/white"
+                                    android:gravity="top|start"
+                                    android:shadowColor="@color/colorshadow"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.5"
+                                    android:shadowRadius="2"
+                                    android:text="@string/motion"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/popuptext"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:id="@+id/motionlayoutothers_idle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/motionlayoutothers"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@drawable/border"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/otherspower_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="@string/power1"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/otherspowerval_idle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_toEndOf="@+id/otherspower_idle"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start|center"
+                                        android:padding="5dp"
+                                        android:shadowColor="@color/colorshadow"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.5"
+                                        android:shadowRadius="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/popuptext"
+                                        android:textStyle="bold" />
+
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/motionlayoutothers"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="20dp"
+                                    android:background="@color/white"
+                                    android:gravity="top|start"
+                                    android:shadowColor="@color/colorshadow"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.5"
+                                    android:shadowRadius="2"
+                                    android:text="@string/idle"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/popuptext"
+                                    android:textStyle="bold" />
+
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/nodevice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:gravity="start|center"
+                            android:padding="5dp"
+                            android:shadowColor="@color/colorshadow"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.5"
+                            android:shadowRadius="2"
+                            android:text="@string/no_device_found"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/popuptext"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="RtlHardcoded" />
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

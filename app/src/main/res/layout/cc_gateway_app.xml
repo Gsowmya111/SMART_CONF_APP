@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:background="#4282D0">
+
+
+        1
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+
+        </LinearLayout>
+        --------------------
+        2
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/back"
+                    android:id="@+id/btnback" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5">
+
+            </LinearLayout>
+
+        </LinearLayout>
+        ----------------
+        3
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+
+        </LinearLayout>
+
+        4
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="8">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|left"
+                android:text="EB CustomerCare"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/addhome_text"  />
+        </LinearLayout>
+
+
+        6
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.8"
+
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/connected"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        7
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1">
+
+        </LinearLayout>
+
+        8
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+
+            android:orientation="vertical"
+           >
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        9
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1">
+
+        </LinearLayout>
+
+        10
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.8"
+
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5">
+
+                <Button
+                    android:id="@+id/btnhome"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/home"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        11
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4">
+
+        </LinearLayout>
+
+
+        1end
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textbg2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/gatway_app_img"
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"
+                        app:srcCompat="@drawable/app_gateway" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EB Gateway signals :"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/connected" />
+
+                    <TextView
+                        android:id="@+id/textView47"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/imageView18"
+                        android:layout_toRightOf="@+id/imageView18"
+
+                        android:text="EB Gateway connected"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/textView47"
+                        android:layout_toEndOf="@+id/imageView18"
+                        android:layout_toRightOf="@+id/imageView18"
+
+                        android:text="@string/gateway_connected"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/notconnected"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/not_connected" />
+
+                    <TextView
+                        android:id="@+id/notconnecttxt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/notconnected"
+                        android:layout_toRightOf="@+id/notconnected"
+
+                        android:text="EB Gateway Not Connected"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/notconnecttxt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/notconnecttxt1"
+                        android:layout_toEndOf="@+id/notconnected"
+                        android:layout_toRightOf="@+id/notconnected"
+
+                        android:text="@string/gateway_notconnected"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/signal_local"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/signal_local" />
+
+                    <TextView
+                        android:id="@+id/signal_local_txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/signal_local"
+                        android:layout_toRightOf="@+id/signal_local"
+
+                        android:text="Local Connection"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/signal_local_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/signal_local_txt1"
+                        android:layout_toEndOf="@+id/signal_local"
+                        android:layout_toRightOf="@+id/signal_local"
+
+                        android:text="@string/gateway_local_connect"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/signal_remote"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/signal_remote" />
+
+                    <TextView
+                        android:id="@+id/signal_remote_txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/signal_remote"
+                        android:layout_toRightOf="@+id/signal_remote"
+
+                        android:text="Remote Connection"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/signal_remote_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/signal_remote_txt1"
+                        android:layout_toEndOf="@+id/signal_remote"
+                        android:layout_toRightOf="@+id/signal_remote"
+
+                        android:text="@string/gateway_remote_connect"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/threeg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/threeg" />
+
+                    <TextView
+                        android:id="@+id/threeg_txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/threeg"
+                        android:layout_toRightOf="@+id/threeg"
+
+                        android:text="3G/4G Connection"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/threeg_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/threeg_txt1"
+                        android:layout_toEndOf="@+id/threeg"
+                        android:layout_toRightOf="@+id/threeg"
+
+                        android:text="@string/gateway_mobile_connect"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/no_net"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/no_net" />
+
+                    <TextView
+                        android:id="@+id/no_net_txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/no_net"
+                        android:layout_toRightOf="@+id/no_net"
+
+                        android:text="No Internet Connection"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/no_net_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/no_net_txt1"
+                        android:layout_toEndOf="@+id/no_net"
+                        android:layout_toRightOf="@+id/no_net"
+
+                        android:text="@string/gatewayred"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+
+                    <TextView
+                        android:id="@+id/textView52"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Operator Settings"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/gatway_app_img2"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        app:srcCompat="@drawable/app_gateway_opertr" />
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/operator_setting"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/gatway_app_img3"
+
+                        android:layout_width="145dp"
+                        android:layout_height="250dp"
+                        android:background="@android:color/darker_gray"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        app:srcCompat="@drawable/app_gateway_gateset" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <TextView
+                        android:id="@+id/textView54"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="IP Settings "
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/gatway_app_img4"
+                        android:layout_width="145dp"
+                        android:layout_height="250dp"
+                        android:background="@android:color/darker_gray"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        app:srcCompat="@drawable/app_gateway_ipsetp" />
+
+                    <TextView
+                        android:id="@+id/textView533"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/ip_setting"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textView544"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/ip_setting2"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/ip_setting_popup"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/gatway_app_img5"
+                        android:layout_width="145dp"
+                        android:layout_height="250dp"
+                        android:background="@android:color/darker_gray"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        app:srcCompat="@drawable/app_gateway_ipsetpop" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <TextView
+                        android:id="@+id/textView56"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gateway Settings"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView551"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/gateway_setting"
+                        android:textColor="@android:color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/gatway_app_img6"
+                            android:layout_width="145dp"
+                            android:layout_height="250dp"
+                            android:background="@android:color/darker_gray"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+
+                            app:srcCompat="@drawable/app_gateway_set1" />
+
+                        <ImageView
+                            android:id="@+id/gatway_app_img7"
+                            android:layout_width="145dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@android:color/darker_gray"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            app:srcCompat="@drawable/app_gateway_set2" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/gatewayreboot"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/reboot_gateway" />
+
+                    <TextView
+                        android:id="@+id/gatewayreboot_txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_above="@+id/gatewayreboot_txt2"
+                        android:layout_toEndOf="@+id/gatewayreboot"
+                        android:layout_toRightOf="@+id/gatewayreboot"
+                        android:text="Gateway Reboot"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gatewayreboot_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/gatewayreboot"
+                        android:text="@string/gateway_reboot"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/gatewayrefresh"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/refresh" />
+
+                    <TextView
+                        android:id="@+id/gatewayrefresh_txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_above="@+id/gatewayrefresh_txt2"
+                        android:layout_toEndOf="@+id/gatewayrefresh"
+                        android:layout_toRightOf="@+id/gatewayrefresh"
+                        android:text="Gateway Refresh"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gatewayrefresh_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/gatewayrefresh"
+                        android:text="@string/gateway_refresh"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/gatewayedit"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/edit" />
+
+                    <TextView
+                        android:id="@+id/gatewayedit_txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_above="@+id/gatewayedit_txt2"
+                        android:layout_toEndOf="@+id/gatewayedit"
+                        android:layout_toRightOf="@+id/gatewayedit"
+                        android:text="Gateway Edit"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gatewayedit_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/gatewayedit"
+                        android:text="@string/gateway_edit"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/gatewayselect"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/select_date" />
+
+                    <TextView
+                        android:id="@+id/gatewayselect_txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_above="@+id/gatewayselect_txt2"
+                        android:layout_toEndOf="@+id/gatewayselect"
+                        android:layout_toRightOf="@+id/gatewayselect"
+                        android:text="Gateway Select_Date"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gatewayselect_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/gatewayselect"
+                        android:text="@string/gateway_select"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/gatewayset"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/set" />
+
+                    <TextView
+                        android:id="@+id/gatewayset_txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_above="@+id/gatewayset_txt2"
+                        android:layout_toEndOf="@+id/gatewayset"
+                        android:layout_toRightOf="@+id/gatewayset"
+                        android:text="Gateway Set"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gatewayset_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/gatewayset"
+                        android:text="@string/gateway_set"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/gatewaygetssid"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/get_ssid" />
+
+                    <TextView
+                        android:id="@+id/gatewaygetssid_txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_above="@+id/gatewaygetssid_txt2"
+                        android:layout_toEndOf="@+id/gatewaygetssid"
+                        android:layout_toRightOf="@+id/gatewaygetssid"
+                        android:text="Gateway Get SSID"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gatewaygetssid_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/gatewaygetssid"
+                        android:text="@string/gateway_getssid"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/gatewaysetssid"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/set_ssid" />
+
+                    <TextView
+                        android:id="@+id/gatewaysetssid_txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_above="@+id/gatewaysetssid_txt2"
+                        android:layout_toEndOf="@+id/gatewaysetssid"
+                        android:layout_toRightOf="@+id/gatewaysetssid"
+                        android:text="Gateway Set SSID"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gatewaysetssid_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/gatewaysetssid"
+                        android:text="@string/gateway_setssid"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/gatewaygetversion"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/version_number" />
+
+                    <TextView
+                        android:id="@+id/gatewaygetversion_txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_above="@+id/gatewaygetversion_txt2"
+                        android:layout_toEndOf="@+id/gatewaygetversion"
+                        android:layout_toRightOf="@+id/gatewaygetversion"
+                        android:text="Gateway Get Version"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gatewaygetversion_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/gatewaygetversion"
+                        android:text="@string/gateway_getversion"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textbg2"
+                    android:paddingBottom="@dimen/infolay_pading_bottom"
+                    android:paddingLeft="@dimen/infolay_pading_left"
+                    android:paddingTop="@dimen/infolay_pading_top">
+
+                    <ImageView
+                        android:id="@+id/gatewaygetebcode"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/eb_code" />
+
+                    <TextView
+                        android:id="@+id/gatewaygetebcode_txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_above="@+id/gatewaygetebcode_txt2"
+                        android:layout_toEndOf="@+id/gatewaygetebcode"
+                        android:layout_toRightOf="@+id/gatewaygetebcode"
+                        android:text="Gateway Get Ebcode"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gatewaygetebcode_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/gatewaygetebcode"
+                        android:text="@string/gateway_getebcode"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

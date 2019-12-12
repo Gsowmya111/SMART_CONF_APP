@@ -1,0 +1,1507 @@
+<resources>
+    <string name="app_name">SmartLiving</string>
+
+    <string name="openDrawer">openDrawer</string>
+    <string name="closeDrawer">closeDrawer</string>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">privacy</string>
+
+
+    <string name="str_user_sett">User Settings</string>
+    <string name="str_oper_sett">Operator Settings</string>
+    <string name="str_smart_sett">Smart Settings</string>
+    <string name="str_log_analytics">Log Analytics</string>
+    <string name="str_log_energy">Energy Saving</string>
+    <string name="str_compl_sett">Support</string>
+    <string name="str_about_sett">About Us</string>
+
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Array List for Device Full Names -->
+    <string-array name="Full_DevNames">
+        <item>Switch Board(1)</item>
+        <item>Switch Board(2)</item>
+        <item>Switch Board(3)</item>
+        <item>Switch Board(4)</item>
+        <item>Switch Board(6)</item>
+        <item>Switch Board(8)</item>
+        <item>Switch Board(2+1)</item>
+        <item>Switch Board(3+1)</item>
+        <item>Switch Board(4+2)</item>
+        <item>Switch Board(5+1)</item>
+        <item>Switch Board(5+2)</item>
+        <item>Switch Board(6+2)</item>
+        <item>Switch Board(7+1)</item>
+        <item>Switch Board(10+2)</item>
+        <item>Switch Board(11+1)</item>
+        <item>Single Light</item>
+        <item>Single Fan</item>
+        <item>Dual Fan</item>
+        <item>Dimmer</item>
+        <item>RGB</item>
+        <item>AC</item>
+        <item>Overhead Tank Sensor</item>
+        <item>Water Master Dual</item>
+        <item>Water Master Cavery</item>
+        <item>Water Master Borewell</item>
+        <item>Water Master BSO</item>
+        <item>Water Sump Sensor</item>
+        <item>Water Borewell Motor</item>
+        <item>Water Sump Motor</item>
+        <item>Gyser</item>
+        <item>Door Lock Switch</item>
+        <item>Curtain LR Single</item>
+        <item>Curtain LR Double</item>
+        <item>Curtain Roller Single</item>
+        <item>Curtain Roller Double</item>
+        <item>IR Blaster</item>
+        <item>Repeater</item>
+        <item>Calling Bell</item>
+        <item>Calling Switch</item>
+        <item>Energy Meter</item>
+        <item>Projector Screen</item>
+        <item>Projector Lift</item>
+        <item>Garden Sprinkler</item>
+        <item>Switch Board(6+1)</item>
+        <item>FM Device</item>
+        <item>Aquarium</item>
+        <item>Smartdog</item>
+        <item>Switch Dimmer(5+1)</item>
+        <item>Curtain Normal</item>
+        <item>Curtain Sheer</item>
+        <item>Somphy Shutter</item>
+        <item>Switch Board(4+1+1)</item>
+        <item>Switch Board(2+1+1)</item>
+        <item>Switch Board(1+1)</item>
+        <item>Switch Board(6+1)</item>
+        <item>Swing Gate</item>
+        <item>Slide Gate</item>
+    </string-array>
+
+    <!-- ArrayList for Device Short Names -->
+
+    <string-array name="Short_DevNames">
+        <item>S010</item>
+        <item>S020</item>
+        <item>S030</item>
+        <item>S040</item>
+        <item>S060</item>
+        <item>S080</item>
+        <item>S021</item>
+        <item>S031</item>
+        <item>S042</item>
+        <item>S051</item>
+        <item>S052</item>
+        <item>S062</item>
+        <item>S071</item>
+        <item>S102</item>
+        <item>S111</item>
+        <item>SLT1</item>
+        <item>SFN1</item>
+        <item>DFN1</item>
+        <item>DMR1</item>
+        <item>RGB1</item>
+        <item>ACR1</item>
+        <item>WOTS</item>
+        <item>WMD1</item>
+        <item>WMC1</item>
+        <item>WMB1</item>
+        <item>WBSO</item>
+        <item>WSS1</item>
+        <item>WBM1</item>
+        <item>WSM1</item>
+        <item>GSR1</item>
+        <item>DLS1</item>
+        <item>CLS1</item>
+        <item>CLD1</item>
+        <item>CRS1</item>
+        <item>CRD1</item>
+        <item>IRB1</item>
+        <item>RPR1</item>
+        <item>CLB1</item>
+        <item>CSW1</item>
+        <item>EGM1</item>
+        <item>PSC1</item>
+        <item>PLC1</item>
+        <item>GSK1</item>
+        <item>S061</item>
+        <item>FMD1</item>
+        <item>AQU1</item>
+        <item>SDG1</item>
+        <item>SWD1</item>
+        <item>CLNR</item>
+        <item>CLSH</item>
+        <item>SOSH</item>
+        <item>S141</item>
+        <item>S120</item>
+        <item>S110</item>
+        <item>S160</item>
+        <item>SWG1</item>
+        <item>SLG1</item>
+    </string-array>
+
+    <string-array name="Short_DevNames_references">
+        <item>S010</item>
+        <item>S020</item>
+        <item>S030</item>
+        <item>S040</item>
+        <item>S060</item>
+        <item>S080</item>
+        <item>S021</item>
+        <item>S031</item>
+        <item>S042</item>
+        <item>S051</item>
+        <item>S052</item>
+        <item>S062</item>
+        <item>S071</item>
+        <item>S102</item>
+        <item>S111</item>
+        <item>SLT1</item>
+        <item>SFN1</item>
+        <item>DFN1</item>
+        <item>DMR</item>
+        <item>RGB</item>
+        <item>ACR1</item>
+        <item>WOTS</item>
+        <item>WMD1</item>
+        <item>WMC1</item>
+        <item>WMB1</item>
+        <item>WBSO</item>
+        <item>WSS1</item>
+        <item>WBM1</item>
+        <item>WSM1</item>
+        <item>GSR1</item>
+        <item>DLS1</item>
+        <item>CUR</item>
+        <item>CUR</item>
+        <item>CUR</item>
+        <item>CUR</item>
+        <item>IRB1</item>
+        <item>RPR1</item>
+        <item>CLB1</item>
+        <item>CSW1</item>
+        <item>EGM1</item>
+        <item>PSC1</item>
+        <item>PLC1</item>
+        <item>GSK</item>
+        <item>S061</item>
+        <item>FMD1</item>
+        <item>AQU1</item>
+        <item>SDG1</item>
+        <item>SWD1</item>
+        <item>CUR</item>
+        <item>CUR</item>
+        <item>SOSH</item>
+        <item>S141</item>
+        <item>S120</item>
+        <item>S110</item>
+        <item>S160</item>
+        <item>SWG1</item>
+        <item>SLG1</item>
+    </string-array>
+
+
+    <!-- ArrayList for Device Types -->
+    <string-array name="Device_Type">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>008</item>
+        <item>009</item>
+        <item>010</item>
+        <item>011</item>
+        <item>012</item>
+        <item>013</item>
+        <item>014</item>
+        <item>015</item>
+        <item>016</item>
+        <item>017</item>
+        <item>018</item>
+        <item>019</item>
+        <item>020</item>
+        <item>021</item>
+        <item>022</item>
+        <item>023</item>
+        <item>024</item>
+        <item>025</item>
+        <item>026</item>
+        <item>027</item>
+        <item>028</item>
+        <item>029</item>
+        <item>030</item>
+        <item>031</item>
+        <item>032</item>
+        <item>033</item>
+        <item>034</item>
+        <item>035</item>
+        <item>036</item>
+        <item>037</item>
+        <item>038</item>
+        <item>039</item>
+        <item>040</item>
+        <item>041</item>
+        <item>042</item>
+        <item>043</item>
+        <item>044</item>
+        <item>045</item>
+        <item>046</item>
+        <item>047</item>
+        <item>048</item>
+        <item>049</item>
+        <item>050</item>
+        <item>051</item>
+        <item>060</item>
+        <item>061</item>
+        <item>062</item>
+        <item>063</item>
+        <item>064</item>
+        <item>065</item>
+        <item>066</item>
+
+    </string-array>
+
+
+       <string name="SWB_Details">From Configuration Remote to Enter Device Into Configuration Mode.\n\nIf SwitchBoard LED Starts Blinking and Gives One Beep  Sound Then Press Below Button To Configure the Device.
+</string>
+<string name="SWD_Details">Press OK 8051 OK From Configuration Remote to Enter Device Into Configuration Mode.\n\nIf SwitchBoard LED Starts Blinking and Gives One Beep  Sound Then Press Below Button To Configure the Device.
+</string>
+    <string name="RGB_Details">From Configuration Remote to Enter Device Into Configuration Mode.\n\nIf RGB Device Gives One Beep Sound Then Press Below Button To Configure the Device.
+</string>
+    <string name="DMR_Details">From Configuration Remote to Enter Device Into Configuration Mode.\n\nIf Dimmer Device Gives One Beep Sound Then Press Below Button To Configure the Device.
+</string>
+    <string name="CUR_Details">From Configuration Remote to Enter Device Into Configuration Mode.\n\nIf Curtain Device Gives One Beep Then Press Below Button To Configure the Device.
+</string>
+    <string name="RPR_Details">Press Configuration Switch From Rpeater Module to Enter Device Into Configuration Mode.\n\nThen Press Below Button To Configure the Device.
+</string>
+    <string name="WPC_Details">Press Configuration Switch From Water Pump Controller Module to Enter Device Into Configuration Mode.\n\nThen Press Below Button To Configure the Device.
+</string>
+    <string name="Default_Details">Configuration Details For This Device Are Not Available Yet.Please Go Back And Select Another Device.
+</string>
+    <string name="Normal_Details">Press configuration button From device to Enter Device Into Configuration Mode.\n\nIf device Gives One Beep Sound Then Press Below Button To Configure the Device.
+</string>
+
+
+    <!-- Wireless Panel Configuration Details -->
+    <string name="Wireless_Panel_Details">Press The Configuration Switch From Wireless Panel  To Enter Wireless panel in Configuration Mode.\n\nOnce Wireless Panel Entered into Configuration Mode Then Press The Below Configuration Button To Configure The Wireless Panel.
+</string>
+
+    <!-- Array List for Wireless Device Full Names -->
+    <string-array name="Full_DevNames_Wireless">
+        <item>1 Switch</item>
+        <item>2 Switch</item>
+        <item>3 Switch</item>
+        <item>4 Switch</item>
+        <item>5 Switch</item>
+        <item>6 Switch</item>
+        <item>2+1 Switch</item>
+        <item>5+1 Switch</item>
+        <item>7+1 Switch</item>
+        <item>8+1 Switch</item>
+        <item>3 Mood Switch</item>
+        <item>6 Mood Switch</item>
+        <item>Single Curtain</item>
+        <item>Dual Curtain</item>
+        <item>Single Fan</item>
+        <item>Dual Fan</item>
+        <item>Dimmer TypeA</item>
+        <item>Dual Dimmer TypeA</item>
+        <item>RGB TypeA</item>
+        <item>ZIGBEE REMOTE</item>
+        <item>Mood Setting Switch</item>
+        <item>Bell Switch</item>
+        <item>Gyser Switch</item>
+        <item>PIR Sensor</item>
+        <item>NFC Tag</item>
+        <item>PIR Direct Sensor</item>
+        <item>Mango IR Sensor</item>
+    </string-array>
+
+    <!-- ArrayList for Wireless Device Short Names -->
+    <string-array name="Short_DevNames_Wireless">
+        <item>WS01</item>
+        <item>WS02</item>
+        <item>WS03</item>
+        <item>WS04</item>
+        <item>WS05</item>
+        <item>WS06</item>
+        <item>WS21</item>
+        <item>WS51</item>
+        <item>WS71</item>
+        <item>WS81</item>
+        <item>WM03</item>
+        <item>WM06</item>
+        <item>WC01</item>
+        <item>WC02</item>
+        <item>WF01</item>
+        <item>WF02</item>
+        <item>WD01</item>
+        <item>WDD1</item>
+        <item>WR01</item>
+        <item>WZ01</item>
+        <item>WSS1</item>
+        <item>WBS1</item>
+        <item>WGS1</item>
+        <item>WPS1</item>
+        <item>WNFC</item>
+        <item>WPD1</item>
+        <item>WIR1</item>
+    </string-array>
+
+    <!-- ArrayList for Wireless Device Types -->
+    <string-array name="Device_Type_Wireless">
+        <item>701</item>
+        <item>702</item>
+        <item>703</item>
+        <item>704</item>
+        <item>705</item>
+        <item>706</item>
+        <item>721</item>
+        <item>722</item>
+        <item>723</item>
+        <item>724</item>
+        <item>725</item>
+        <item>726</item>
+        <item>707</item>
+        <item>708</item>
+        <item>709</item>
+        <item>710</item>
+        <item>711</item>
+        <item>712</item>
+        <item>713</item>
+        <item>714</item>
+        <item>715</item>
+        <item>716</item>
+        <item>717</item>
+        <item>718</item>
+        <item>719</item>
+        <item>720</item>
+        <item>727</item>
+    </string-array>
+
+    <!-- Switch Board Switche's action Data List -->
+
+    <string-array name="SwitchData_Wireless">
+        <item>ON</item>
+        <item>OFF</item>
+        <item>ON/OFF</item>
+    </string-array>
+    <string-array name="SwitchData_Wireless_pir">
+        <item>ON</item>
+        <item>OFF</item>
+    </string-array>
+
+    <string-array name="ALL_ON_OFF_Data_Wireless">
+        <item>ALL ON</item>
+        <item>ALL OFF</item>
+    </string-array>
+    <string-array name="FanData23_Wireless">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>ON</item>
+        <item>OFF</item>
+        <item>ON/OFF</item>
+    </string-array>
+
+    <!-- Dimmer Array Data -->
+
+    <string-array name="DMR_BRIGHTNESS_LEVEL">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>HIGH</item>
+        <item>MEDIUM</item>
+        <item>LOW</item>
+    </string-array>
+    <string-array name="DMR_ACTIONS">
+        <item>ON</item>
+        <item>OFF</item>
+        <item>ON/OFF</item>
+    </string-array>
+
+    <!-- RGB Array Data -->
+
+    <string-array name="RGB_BRIGHTNESS_LEVEL">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="RGB_SPEED_LEVEL">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="RGB_COLOURS_Effect">
+        <item>RED</item>
+        <item>GREEN</item>
+        <item>BLUE</item>
+        <item>PINK</item>
+        <item>ORANGE</item>
+        <item>WHITE</item>
+        <item>FLASH</item>
+        <item>STROBE</item>
+        <item>SMOOTH</item>
+        <item>FADE</item>
+    </string-array>
+    <string-array name="RGB_ACTIONS">
+        <item>ON</item>
+        <item>OFF</item>
+        <item>ON/OFF</item>
+    </string-array>
+
+    <!-- CURTAIN Array Data -->
+    <string-array name="CUR_ACTIONS">
+        <item>OPEN</item>
+        <item>CLOSE</item>
+        <item>STOP</item>
+    </string-array>
+    <string-array name="RGB_MoodActions_wireless">
+        <item>ON</item>
+        <item>OFF</item>
+    </string-array>
+
+    <!-- CURTAIN Array Data for mood settings -->
+    <string-array name="DMR_MoodActions_wireless">
+        <item>ON</item>
+        <item>OFF</item>
+    </string-array>
+
+    <!-- CURTAIN Array Data for mood settings -->
+    <string-array name="CUR_MoodActions_wireless">
+        <item>OPEN</item>
+        <item>CLOSE</item>
+    </string-array>
+
+    <!-- Call Bell Array Data -->
+    <string-array name="CallBell_Actions">
+        <item>ON</item>
+        <item>OFF</item>
+    </string-array>
+
+    <!-- Door Lock Array Data -->
+    <string-array name="DoorLock_Actions">
+        <item>OPEN</item>
+    </string-array>
+
+
+    <dimen name="roompanel_spin">15dp</dimen>
+    <dimen name="roompaneltxt">15dp</dimen>
+    <dimen name="checktxt">11dp</dimen>
+    <dimen name="expwidth">130dp</dimen>
+    <dimen name="expheight">170dp</dimen>
+
+    //group
+    <dimen name="grouppadding">7dp</dimen>
+    <dimen name="grouptext">16dp</dimen>
+    <dimen name="grouptext_margintop">4dp</dimen>
+    <dimen name="grouptext_marginbot">4dp</dimen>
+
+    <dimen name="groupimg_margintop">2dp</dimen>
+    <dimen name="groupimg_marginbot">2dp</dimen>
+
+    //child
+    <dimen name="itemtext_margintop">4dp</dimen>
+    <dimen name="itemtext_marginbot">4dp</dimen>
+    <dimen name="itemtext_marginbleft">60dp</dimen>
+    <dimen name="itemcheck_margintop">4dp</dimen>
+    <dimen name="itemcheck_marginbot">4dp</dimen>
+    <dimen name="itemcheck_marginbleft">35dp</dimen>
+    <dimen name="itemview_margintop">38dp</dimen>
+    <dimen name="childtext">12sp</dimen>
+
+
+    <dimen name="txtsub2">14dp</dimen>
+    <dimen name="dimmerset_Savebtn">20dp</dimen>
+
+    <string-array name="swbnum">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="edit_timer">
+        <item>Select Room</item>
+        <item>Room 1</item>
+        <item>Room 2</item>
+        <item>Room 3</item>
+        <item>Room 4</item>
+        <item>Room 5</item>
+    </string-array>
+
+
+    <string-array name="iconstype">
+        <item>Home</item>
+        <item>Office</item>
+        <item>Hotel</item>
+    </string-array>
+
+    <!-- bubblechart-->
+
+    <string name="action_about">About</string>
+    <string name="title_activity_line_chart">LineChartActivity</string>
+    <string name="title_activity_column_chart">ColumnChartActivity</string>
+    <string name="title_activity_pie_chart">PieChartActivity</string>
+    <string name="title_activity_bubble_chart">BubbleChartActivity</string>
+    <string name="title_activity_preview_line_chart">PreviewLineChartActivity</string>
+    <string name="title_activity_preview_column_chart">PreviewColumnChartActivity</string>
+    <string name="title_activity_combo_line_column_chart">ComboLineColumnChartActivity</string>
+    <string name="title_activity_line_column_dependency">LineColumnDependency</string>
+    <string name="title_activity_good_bad">GoodBadActivity</string>
+    <string name="title_activity_tempo_chart">TempoChartActivity</string>
+    <string name="title_activity_speed_chart">SpeedChartActivity</string>
+    <string name="title_activity_view_pager_charts">ViewPagerChartsActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="about_version_label">"Library version "</string>
+    <string name="about_author">Leszek Wach 2014</string>
+    <string name="about_app_icon_content_description">App icon</string>
+    <string name="about_go_to_github">Go to GitHub</string>
+    <string name="permissiontext">Only Super Admin user can access this feature.</string>
+    <string name="swb_notfound">No Switches.</string>
+
+
+
+    <!--Customer Care-->
+
+
+    <string name="tab1">FAQ</string>
+    <string name="tab2">HELP</string>
+    <string name="tab3">TICKETS</string>
+    <string name="action_search">Search</string>
+
+    <string name="action_chat">Placeholder</string>
+    <string name="action_new_group">Placeholder</string>
+    <string name="action_new_broadcast">Placeholder</string>
+    <string name="action_whatsapp_web">Placeholder</string>
+    <string name="action_starred_messages">Placeholder</string>
+    <string name="action_status">Placeholder</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_clear_call_log">Placeholder</string>
+    <string name="action_calls">Placeholder</string>
+    <string name="action_refresh">Placeholder</string>
+    <string name="action_contacts">Placeholder</string>
+    <string name="action_without_icon">Placeholder</string>
+    <string name="action_with_icon">Placeholder</string>
+    <string name="action_custom">Placeholder</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- <string name="hello_blank_fragment">Hello blank fragment</string>-->
+    <string name="hintSearchMess">Serch by Keyword ex: product</string>
+    <string name="search">Search by keyword</string>
+    <string name="title_activity_product_activity">Product_activity</string>
+    <string name="edisonmailid">info@edisonbro.com</string>
+    <string name="edisoncontactnumber">080-41314582</string>
+    <string name="companyname">EdisonBro Smart Labs Pvt. Ltd.</string>
+
+
+    <!--1. SwitchBoard - > Mobile App Operations -> Select Room & Switchboard-->
+    <string name="select_room">
+	Select the room from the left panel you and operate the configured smart devices in that room. After selecting the room, you will have to select the smart switchboard / device. In the layout below the chosen switchboard, you can perform swipe (left or right) operation and the Application loads with the different Switchboard. The number of dots indicates that total count of switch boards included in the Application. In the above screen we have selected EdisonBro Smart Switch 5 + 1 Module switch, which can connect up to 5 lighting devices (or 3 Lighting and 2 HVAC device) and 1 fan.
+   </string>
+
+    <!--2. SwitchBoard - > Mobile App Operations -> Perform Operation-->
+    <string name="perform_op">
+		 Perform the desired operations like turn ON/OFF Lights, Fan, Air Conditioner &amp; Geyser with a touch on the icon in the App.
+		 Description of each icon is mentioned in the following table. \n
+	</string>
+
+    <!--3. SwitchBoard - > Mobile App Operations -> Change icon-->
+
+    <string name="change_icon">If user wishes to change the icon of any switch it can be done by a Long press on the bulb switch. As it is lighting Appliance switch the user can set only 	lighting appliances (tube light, bed lamp, cfl, etc) icons.\n\nSimilarly, for HVAC Appliance switch the user can set only HVAC appliances (Air conditioner &amp; Geyser) icons.\n
+		</string>
+
+    <string name="change_iconone">
+				 Similarly, for HVAC Appliance switch the user can set only HVAC appliances (Air conditioner &amp; Geyser) icons.
+		</string>
+
+    <!-- 4. SwitchBoard - > Mobile App Operations ->Change Settings-->
+
+    <string name="change_setting">\t\t\t\t\t
+			User can change the settings with a touch of the settings button.
+			On press of setting button the layout shown above appears on the screen with which the user can operate for different settings of the switchboard with the ON/OFF toggle button.
+			The setting option is common and can be used across all the switchboards.
+		</string>
+
+    <!-- 5. SwitchBoard - > Mobile App Operations -> Set Timer-->
+
+    <string name="set_time">
+			Your switches can now be timed. On press of timer button the above layout appears on the screen and the user can set different Timers on the switches
+		</string>
+
+    <string name="set_timetwo">
+ 			On Press of Settings Operation button, the below layout appears on the Screen and the user can select the switches that need to be Time operated automatically.
+ 			 \n SAVE On press of save button the timer settings will be saved.
+  			 \n CANCEL On click of cancel button the user is navigated to the previous screen without saving.\n
+		</string>
+
+    <string name="set_timethree">
+				On Press of timer list button, the following layout appears on the Screen.
+		</string>
+
+    <string name="set_timefour">
+				The timer option is common and can be used across all the switchboards.
+		</string>
+
+    <!-- 6. SwitchBoard - > Mobile App Operations -> Set Mood-->
+
+    <string name="moodone">
+			You can configure different mood based on your requirement for a particular room.
+			On long press of Mood1 button the above layout appears on the screen and the user can set different lights to be ON and OFF as per their requirement.
+	</string>
+
+    <string name="moodtwo">
+			On Press of Mood List button, the below layout appears on the Screen and the user can select the switch operation to be edited / deleted in the selected MOOD
+	</string>
+
+    <string name="moodthree">
+			The Mood setting option is common and can be used across all the rooms.
+			Three mood setting option is being provided for the user, he can configure three different mood for every rooms where he has access to.
+			Each user will have his own mood settings in his app.\n
+        		In Mood Settings, User can configure Switchboard and other EdisonBro devices which are installed in the room as per his requirement to a particular MOOD.
+			One such case is displayed below.
+	</string>
+
+    <string name="moodimg1">
+		Configuring SwitchBoard Operations to MOOD1
+	</string>
+
+    <string name="moodimg2">
+		Configuring Curtain Operations to MOOD1
+	</string>
+
+    <string name="moodfour">
+		Once you press MOOD 1 the switchboard and curtain will operate as configured.
+		In this way user can configure multiple devices in a room to a single MOOD setting.\n
+    		EdisonBro has various combinations of Intelligent SwitchBoards configured in a given room. On swipe of the view pager user can view and operate them.  Other combination Switch Board Layouts below.
+	</string>
+
+    <string name="moodimg3">
+		EdisonBro Smart Switch - 1 Switch Module
+	</string>
+
+    <string name="moodimg4">
+		EdisonBro Smart Switch - 2 Switch Module
+	</string>
+
+    <string name="moodfive">
+		This model can connect 1 lighting device and 1 HVAC appliance (Air conditioner or Geyser)
+	</string>
+
+    <string name="moodimg5">
+		EdisonBro Smart Switch -  2+1 Switch
+	</string>
+
+    <string name="moodsix">
+		This can connect 1 lighting device 1 HVAC appliances (Air conditioner or Geyser) and a Fan module is already built-in with 4 levels of regulator control.
+  	</string>
+
+    <string name="moodimg6">
+		EdisonBro Smart Switch - 3 Switch Module
+	</string>
+
+    <string name="moodseven">
+		This can connect 2 lighting devices and 1 HVAC appliances (Air conditioner or Geyser)
+	</string>
+
+    <string name="moodimg7">
+		EdisonBro Smart Switch - 5+ 1 Switch
+	</string>
+
+    <string name="moodeight">
+			This can connect up to 3 lighting devices 2 HVAC appliances (Air conditioner or Geyser) and a Fan with regulator and 4 levels of control for the same.
+    	</string>
+
+    <string name="moodimg8">
+		EdisonBro Smart Switch - 8 Switch Module
+	</string>
+
+    <string name="moodnine">
+		This can connect up to 6 lighting devices 2 HVAC appliances (Air conditioner or Geyser)
+    	</string>
+
+    <!-- 7. SwitchBoard - > Mobile App Operations -> Maintenance-->
+
+    <string name="mantain1">
+		Zero maintenance as the front panel of Smart Switch Board is made up of toughened glass.
+		Glass is an insulator and a bad conductor of electricity makes it safer to clean on the surafce. \n Use a damp, soft, lint-free cloth to clean the surface of the switch board.
+	</string>
+
+    <string name="mantain2">
+			The symbol indicates that this product should be disposed of separately from regular household waste streams at its end of life.
+			It is your responsibility to dispose electric and electronic equipment at recycle centres so as to help conserve natural resource.
+	</string>
+
+    <!-- 8. SwitchBoard - > Mobile App Operations ->  Troubleshooting-->
+
+    <string name="trouble1">
+		Ensure that the battery is inserted or has not drained.
+	</string>
+
+    <string name="trouble2">
+		There is absolutely no troubleshooting user can do if the switch is not working.User need to contact EdisonBro Support for further assistance.
+	</string>
+
+    <string name="troublehead1">
+		Wireless remote version only :
+	</string>
+
+    <string name="troublehead2">
+		My Touch Switch is not working :
+	</string>
+
+	<string name="troublehead3">
+	My Smart Switch is working Fine with Touch &amp; IR but not App. Why?
+	</string>
+	<string name="trouble3">
+	First check if your App is connected to the EB Gateway which is indicated by Green
+	Dot.\n\nIf a Red dot appears, then your internet connection either on the Phone or
+	Gateway is not working and hence operations from the App are not working.
+	\n\nIf both the internet connections are working, kindly look for the LED (which one) to
+	blink on this confirms App is able to communicate with the EB Gateway. \n\nThen you
+	need to contact EdisonBro Customer Care for further assistance.
+	</string>
+
+<string name="switchboard_design">
+	"Our Smart Switch is an intelligent switch designed to deliver regular operation that a normal switch would do which includes operating Lights, Fan, Air Conditioner, Geyser etc in a totally wireless system.
+
+EdisonBro’s Smart Switch has changed the way traditional switches work.
+You can operate yours switches with a single touch when at home or away from home.
+
+This User Guide is designed to provide instructions about usage/operations of the EdisonBro’s Smart Switch.
+
+Smart Switch can be operated by direct gentle Touch, IR Remote, Mobile App (iOS / Android), automatically by configuring Timers / Moods and finally as a result of PIR Sensor action."
+</string>
+
+
+
+
+
+
+
+
+<string name="PIR_applicstion_head">
+	Application of PIR sensor:
+</string>
+
+<string name="PIR_applicstion">
+	1. Connect your PIR Sensors with Siren &amp; Lights to secure you house from theft. As the thief comes in the detection angle of the Sensor the alarm from the siren rings also the light glows to alert you and scare the thief. Thus, Ensure safety.\n\n
+	2. Light is switched ON automatically by using PIR sensor when a person enters the corridor and switched OFF automatically once he leaves the detection area. Thus, save energy.\n\n
+	3. Conference Room lights, A/C, are switched ON and the projector screen is set automatically by using PIR sensors when people enter and are switched OFF when people exit the room.\n\n
+	4. Turn ON front step or parking space lights when visitors approach.\n\n
+	5. Connecting sensors with the common toilets &amp; exhaust fans to ensure they are not left ON after use.\n\n
+	6. Connect your sensor with fountain and have your fountain always ON when you are around (and OFF when you are away).\n\n
+	7. Place your sensor on to the leg of your bed which will switch ON the light when you get out of the bed and OFF after using the washroom at night.\n\n
+	8. Using sensors in frequently used but difficult to monitor places like trial room, Lift, pantry, garden lights helps worrying about them.\n\n
+</string>
+
+<string name="PIR_userguid_head">
+	PIR [Passive Infrared sensor] User Guide:
+</string>
+<string name="PIR_userguid">
+	PIR an electronic sensor that measures infrared(IR) light radiating from objects in its field of view. PIR sensor detects a human being moving around within approximately 10m from the sensor.\n
+	PIR can be operated individually or in Groups.\n
+	User Interface of PIR is shown in the layout below.\n
+</string>
+<string name="PIR_GROUP_userguid_head">
+PIR GROUP USER GUIDE:
+
+</string>
+<string name="PIR_GROUP_userguid1">
+When Individual PIR are set into groups then it is a Group PIR.\n
+Any number of PIR can be added into a Group. All the Groups were included under Group icon.\n
+User Interface of Group PIR is shown in the layout below.\n
+</string>
+
+<string name="PIR_GROUP_userguid2">
+This indicates that it is a view pager. Allows the user to identify the number of PIR included in a particular Group. When User swipes the screen, it allows the user to switch to other PIR Group.\n
+The Group Icon indicates that it is a PIR Group. It allows the user to identify that the layout is a PIR Group layout.\n
+</string>
+
+<string name="PIR_INDIVIDUAL_userguid_head">
+PIR INDIVIDUAL USER GUIDE:
+</string>
+<string name="PIR_INDIVIDUAL_userguid1">
+All the Single PIR were included under Individual icon.\n
+User Interface of Individual PIR is shown in the layout below.\n
+</string>
+
+<string name="PIR_INDIVIDUAL_userguid2">
+This indicates that it is a view pager. Allows the user to identify the number of PIR under Individual icon. When User swipes the screen, it allows the user to switch to other Individual PIR.\n
+PIR Motion Sensor Button allows the user to identify that Motion sensor is in ON state.\n
+</string>
+
+
+    // PIR Data
+
+<string name="pirselect">
+	Select the room from the left panel
+	view and operate the configured
+	smart devices in that room. After
+	selecting the room, you will have to
+	select the PIR / device.\n\n In the layout
+	shown the chosen PIR, you can
+	perform swipe (left or right)
+	operation and the Application loads
+	with the different PIR.\n\n The number of
+	dots indicates that total count of PIR
+	included in the selected room. In the
+	above screen we have selected, shows
+	PIR which can detect both motion and
+	intensity of light in its active range.
+</string>
+
+<string name="pirperform">
+Perform the desired operations like
+	turn ON/OFF Lights, Fan, Air
+	Conditioner &amp; Geyser with a touch on
+	the icon in the App. Description of
+	each icon is mentioned in the
+	following table.
+</string>
+<string name="pirperform_group_head">
+	PIR Group :
+</string>
+<string name="pirperform_group">
+	When Individual PIR are set into
+groups then it is a Group PIR.\n
+Any number of PIR can be added
+into a Group. All the Groups were
+included under Group icon.
+</string>
+<string name="pirperform_ind_head">
+	PIR Individual :
+</string>
+<string name="pirperform_ind">
+	All the Single PIR were included
+under Individual icon.\n
+User can operate all these PIR
+individually, and all PIR can be
+accessed by swiping left or
+right.
+</string>
+
+<string name="pirtimer">
+	Timer setting lets the user
+	schedule
+	device
+	to
+	operate
+	automatically at preferred time/days/date.
+</string>
+<string name="pirtimer_set">
+
+	Your PIR can now be timed. On press
+	of timer button, the below layout
+	appears on the screen and the user
+	can set different Timers on the PIR.
+</string>
+
+<string name="pirchangesettings">
+	User can change the settings with a
+	touch of the settings button.\n
+	On press of setting button, the layout
+	shown appears on the screen with
+	which the user can operate for
+	different settings of the PIR with the
+	ON/OFF toggle button.\n
+	The setting option is common and can
+	be used across all the PIR.
+</string>
+<string name="pir_timer_operation">
+	On Press of Settings Operation button,
+the shown layout appears on the
+Screen and the user can select motion
+/ intensity that need to be Time
+operated automatically.
+</string>
+<string name="pir_edit_timer">
+	On Press of timer list button, the
+following layout appears on the
+Screen.
+</string>
+
+<string name="pir_toubleshoot1">
+	Device is not turned OFF even though PIR is ON:
+</string>
+<string name="pir_toubleshoot2">
+	This may be because User has turned the device ON from Mobile app or through Remote.
+</string>
+<string name="pir_toubleshoot3">
+	My PIR is not working:
+</string>
+<string name="pir_toubleshoot4">
+	There is absolutely no troubleshooting user can do if the switch is not working. User
+need to contact EdisonBro Support for further assistance.
+</string>
+<string name="gateway">
+	The quintessence of your smart home / office is our master home controller.
+	It is the Gateway through which all the smart devices are controlled.
+	\n\nOur Gateway works on proprietary 128 bit secured wireless protocol piggy backing on 2.4GHz industry proven RF, is the spine of the technology that we use for wirelessly connecting your automation devices.
+	\n\nIt is devised in a manner that it remains crash proof, and even if there is no power it would still continue to work for hours and alerting the user about the same.
+
+
+\n\nA single Gateway installed and connected to your existing internet will let authorized users of the home operate and monitor the same from anywhere.
+
+ \n\nIt can connect and communicate to over hundred devices in the home automation network.
+	Without any loss of user experience, the Gateway can easily handle multiple users operating concurrently.
+	It is this Gateway which is designed to operate your Timed devices with accuracy of a second.
+
+	\n\nGateway has repository of all the usage which can be viewed by the consumers for audit or analytics. Upon demand from consumers sensitive to privacy, the Gateway can be configured to work only within your Living Space.
+</string>
+<string name="gateway1">
+
+
+
+	\"EB Smart Gateway re-imagines what a home can be.
+	When a single app puts families in control of their comfort, life becomes a simpler.
+	Technology becomes a partner.
+	EB Smart Gateway can help you create a lifestyle you love, so you can spend more time enjoying it.\"
+</string>
+<string name="gatewayred">
+	This LED indicates user can access IP address of EB Gateway through EB Smartliving mobile application within same network to which EB Gateway is connected.
+</string>
+<string name="gateway_orange">
+	 This LED indicates the status of EB Gateway.
+	\nIf this LED is OFF , then it indicates that EB Gateway is not running .
+	\nIf this LED is blinking every 2 seconds , (turns ON for 2 seconds and turns OFF for 2 seconds) indicates that EB Gateway is running.
+</string>
+<string name="gateway_white">
+	This LED indicates the status of Internet for EB Gateway.
+	\n\ncase 1 : If this LED is blinking for every 1 second , it indicates that Internet is available .
+	\nUser can operate EB configured devices through EB Smartliving mobile application from any network (with Internet).
+	\n\ncase 2 : If this LED is blinking for every 10 second , it indicates that Internet is not available.
+	\nUser can only operate EB configured devices through EB Smartliving mobile application from same network which EB Gateway is connected to.</string>
+<string name="gateway_green">
+	This LED indicates the request and response status between EB configured devices and EB Gateway.
+	\nIt will be always OFF , whenever request and response is happening between EB configured devices and EB Gateway , it will blink.</string>
+<string name="gateway_blue">
+	This LED indicates EB Gateway is running through battery.
+	\nIt will blink every 60 seconds when EB Gateway is running through battery.</string>
+<string name="gateway_reset">
+	This is used to reset the superadmin user password.s
+	\nTo reset superadmin user password , user should press this button for 5 seconds when initially power is given to EB Gateway , superadmin password will be reset to "123_ebha".
+</string>
+<string name="gateway_connected">
+	This indicates that EB Smartliving App is connected to EB Gateway.
+</string>
+<string name="gateway_notconnected">
+	This indicates that EB Smartliving App is not connected to EB Gateway.
+</string>
+<string name="gateway_local_connect">
+	This indicates that the EB Smartliving App is connected to the EB Gateway through the same network in which Gateway is connected to.
+</string>
+<string name="gateway_remote_connect">
+This indicates that the EB Smartliving App is connected to the EB Gateway through different network. (not of EB Gateway network)
+</string>
+<string name="gateway_mobile_connect">
+	This indicates that the EB Smartliving App is connected to the EB Gateway through mobile network.
+</string>
+	<string name="gateway_no_internet">
+	This indicates that there no internet available.
+	</string>
+
+
+	<string name="operator_setting">
+	On press of the navigation icon in the left corner of EB Smartliving App, the layout  shown  appears with  different
+settings operation available only for Admin and superadmin user.\n\n
+		Gateway Settings can be accessed on click of Operator Settings.
+	</string>
+
+	<string name="operator_setting2">
+		On press of Operator Settings, the layout shown will appear with different settings option.
+	</string>
+	<string name="ip_setting">
+	User can access the EB Gateway IP address on clicking IP Settings.
+	</string>
+	<string name="ip_setting2">
+	The purpose of IP Settings is to let user change the Local Network to which EB Gateway connects to.
+	</string>
+	<string name="ip_setting_popup">
+	\n\nThe below pop-up appears on click of IP Settings. User can edit and save the IP address, port and SSID here.
+	</string>
+
+	<string name="gateway_setting">
+	On press of Gateway Settings in Operator Settings, the following layout will appear.
+	</string>
+
+	<string name="gateway_reboot">
+	On press of this button the EB Gateway will restart.
+	</string>
+	<string name="gateway_refresh">
+	On press of refresh button, it will fetch EB Gateway date and time.
+	</string>
+	<string name="gateway_edit">
+	On press of this button, user can access the edit column where the EB Gateway date and time can be edited.
+	</string>
+	<string name="gateway_select">
+	On press of this button, user can select a particular date and time for EB Gateway as required.
+	</string>
+	<string name="gateway_set">
+	On press of SET button, whatever date and time user has selected will be SET as the EB Gateway date and time.
+	</string>
+	<string name="gateway_getssid">
+	On press of Get SSID, user can fetch the name of the network to which EB Gateway is connected.
+	</string>
+	<string name="gateway_setssid">
+	On press of Set SSID, user can Set any name for the network to which EB Gateway is connected.
+	</string>
+
+    <string name="gateway_getversion">
+	On press of this button, user can fetch the Version of EB Gateway.
+	</string>
+
+      <string name="gateway_getebcode">
+	On press of this button, user can fetch the code of EB Gateway.
+	</string>
+
+	<string name="gateway_troubleshhot1">
+	Gateway is ON, but no device is operating.
+	</string>
+	<string name="gateway_troubleshhot12">
+	Check if router is having power.
+	If there is no power supply  then router wont work, but
+	EB Gateway will work since it is having battery backup.
+	</string>
+	<string name="gateway_troubleshhot2">
+	Not able to connect to Gateway.
+	</string>
+	<string name="gateway_troubleshhot2121">
+	If connected through mobile network, check if internet is working.
+	Check if LAN cable is properly connected to the EB Gateway.
+	</string>
+
+
+	<string name="rgb_desc1">
+	Edisonbro RGB controllers give a perfect visible effect with its LED, which offers an excellent indoors look.
+	</string>
+	<string name="rgb_desc2">
+	With edisonbro RGB controllers consumer can provide special  feature and styles to the rgb lights for smooth and peaceful dwelling area.
+	</string>
+	<string name="rgb_desc3">
+	Edisonbro wireless smart RGB controller provide a big style of colourful shades to play with, through EB Smartliving app. consumer can manage the intensity of mild &amp; the velocity as you preference via the mobile app (ios/android).
+	</string>
+
+	<string name="rgb_select">
+	Select the room from the left panel view and operate the configured smart devices in that room. After selecting the room, you will have to select the RGB/device.
+</string>
+	<string name="rgb_perform_op">
+	Perform the desired operations like select the desired colour tone, brightness and speed of the lighting fixture for all the RGB groups and	individuals at the same time.
+	</string>
+	<string name="rgb_perform_gp_op">
+	• When  Individual RGB are set into groups then it is a Group RGB.\n\n
+	• Any number of RGB can be added into a Group. All the Groups are included under Group icon.\n\n
+	• Users can select particular RGB group with the press of icon.\n\n
+	• The layout allows the user to select the desired colour tone, brightness and speed of the lighting fixture.\n\n
+	• The Selected Colour, brightness and speed will applicable to all the RGBs under selected group.
+	</string>
+	<string name="rgb_perform_ind_op">
+	• All the Single RGB were included under Individual icon\n\n
+	• User can operate all these RGB individually, and all RGB can be accessed by swiping left or right.
+	</string>
+
+	<string name="rgbtimer_set">
+	Your RGB can now be timed. On press
+	of timer button, the below layout
+	appears on the screen and the user
+	can set different Timers on the RGB.
+</string>
+
+    <string name="rgb_timer_operation">
+	On Press of Settings Operation button,
+the shown layout appears on the
+Screen and the user can select color or effect needed.
+</string>
+
+<string name="rgb_chng_setting">
+	• User can change the settings with a touch of the settings button.\n\n
+
+	• On  press of setting button, the layout shown appears on the screen with which the user can operate for different settings of the RGB with the ON/OFF toggle button.
+</string>
+<string name="mood_set_purpose">
+
+	Mood settings let the user to
+set  devices  in  a  room  to  operate  as
+required to create a perfect aura.
+</string>
+
+<string name="mood_set">
+
+	You can configure different mood based on your requirement for a particular room.\n\n
+	On long press of Mood1 button the following layout appears on the screen and the user can set different RGB operations as per their requirement.
+
+</string>
+	<string name="mood_set_list">
+	On Press of Mood List button, the below layout appears on the Screen and the user can select the RGB
+	operation to be edited/deleted in the selected MOOD.
+</string>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //Curtain Controller
+        -->
+	<string name="controller_works">
+	How EdisonBro Smart Curtain Controller works?
+	</string>
+	<string name="controller_works_exp">
+	EdisonBro Smart Curtain Controllers are devices that lets user control the curtain from  anywhere in this world.EdisonBro Smart Curtain Controllers
+	are programmed to Open/Close or Pause the curtain at any position that user needs it to be, with a single touch through EdisonBro’s mobile app.
+</string>
+
+
+	<string name="Select_Room_Curtain">
+	Select Room &amp; Curtain
+	</string>
+
+	<string name="Select_Room_Curtain_exp">
+	Select the room from the left panel view and operate the configured smart
+	devices in that room. After selecting he room, you will have to select the Curtain from the device panel.
+	If there are more than two curtains, then in the device operational panel you can swipe (left or right)and the App shows different Curtains.
+	The number of dots indicates the total count of Curtains in stalled in the selected room.
+	In the screen below, you can see that it is configured with both sheer and normal curtain for the user to operate from the app.
+	</string>
+
+
+	<string name="perform_Operations">
+	Perform Operations
+	</string>
+
+	<string name="perform_Operations_exp">
+	Perform the desired operations like turn OPEN/STOP/CLOSE, with a touch on the icon in the App.
+		Description of each icon is mentioned in the following table.
+	</string>
+
+	<string name="curtain_Group">
+	Curtain Group
+	</string>
+
+	<string name="curtain_Group_exp">
+	• When an Individual Curtain is configured during installation into a group, it can be operated as Group Curtain.
+	\n\n• Grouping of curtain/sheer is done during configuration and installation stage.
+	\n\n• Any number of Curtain can be added into a Group. All the Groups are included under Group icon.
+	\n\n• All Sheer can be grouped together and all normal curtain can be grouped together.
+	\n\n• This indicates that it is a view pager. Allows the user to identify the number of Curtains included in a particular Group. When User swipes the screen, it allows the user to switch to another Curtain Group.
+	\n\n• The Group Icon indicates that it is a Curtain Group. It allows the user to identify that the layout is a Curtain Group layout.
+	</string>
+
+	<string name="curtain_Individual">
+	Curtain Individual
+	</string>
+
+	<string name="curtain_Individual_exp">
+	• All the Single Curtain are included under Individual icon.
+	\n\n• User can operate all these Curtains individually, and all Curtains can be accessed by swiping left or right.
+	\n\n• This indicates that it is a view pager and allows the user to identify a particular Individual Curtain. When User	swipes the screen, it allows the user to switch to another Individual Curtain.
+	</string>
+
+
+	<string name="timer_Setting">
+	Timer Setting
+	</string>
+
+	<string name="timer_Setting_exp">
+	Timer setting lets the user schedule device to operate automatically at preferred time/days/ date. User can set Sheer,Curtain or both Sheer and Curtain to be time operated.
+	</string>
+
+
+	<string name="set_Timer">
+	Set Timer
+	</string>
+
+	<string name="set_Timer_exp">
+	Your Curtain can now be timed to user preferred time period. On press of timer button, the shown layout appears on the screen and the user can set, same or different Timers on the Sheer and Curtain as required.
+	</string>
+
+	<string name="set_Timer_exp1">
+	On Press of Settings Operation button, the shown layout appears on the Screen and the user can select Sheer, Curtain, both Sheer and Curtain that need to be Time operated automatically.
+	</string>
+
+	<string name="set_Timer_exp2">
+	On Press of timer list button,the following layout appears on the Screen.
+	</string>
+
+
+	<string name="change_Settings">
+	Change_Settings :
+	</string>
+
+	<string name="change_Settings_exp">
+	Change Settings User can change the settings with a touch of the settings button.
+	On press of setting button, the layout on your right hand appears on the screen with which the user can operate for different settings of the curtain with the ON/OFF toggle button.
+	The setting option is common and can be used across all the curtains.
+	</string>
+
+
+	<string name="mood_Settings">
+	Mood Settings
+	</string>
+
+	<string name="mood_Settings_exp">
+	Mood settings let the user to set devices in a room to operate as required to create a perfect aura.
+	</string>
+
+
+	<string name="Set_Moods">
+	Set Moods
+	</string>
+
+	<string name="Set_Moods_exp">
+	You can configure different mood based on your requirement for a particular room.
+	\n\nOn long press of Mood button, the following layout appears on the screen and the user can set different Curtain to be OPEN or CLOSE as per their requirement.
+	</string>
+
+
+	<string name="Set_Moods_exp2">
+	On Press of Mood List button, the shown layout appears on the Screen and the user can select the Curtain operation to be edited/ deleted in the selected MOOD.
+	</string>
+
+
+	<string name="Set_Moods_exp3">
+	User can configure Curtain and EdisonBro PIR Sensor to automate the room.
+	\nOnce motion is detected by the PIR Sensor, it will trigger the curtain to be operated as preprogramed by the user.
+
+	\n\nThree mood setting option is being provided for the user, he can configure three different mood for every rooms where he has access to.
+
+	\n\nEach user will have his own mood settings in his app.
+
+	\n\nOnce you press MOOD 1 the devices which are in the list will operate as configured.
+
+	\n\nIn this way user can configure multiple devices in a room to a single MOOD setting.
+	</string>
+
+	<string name="curtain_troubleshoot">
+	My Curtain Controller is not working:
+	</string>
+
+	<string name="curtain_troubleshoot_exp">
+	• Check for gateway is turned OFF.
+	\n\n• Check if through EB mobile app the device is turned OFF.
+	</string>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //Dimmer Controller
+            -->
+	<string name="dim_controller_works">
+	How EdisonBro Smart Dimmer Controller works?
+	</string>
+	<string name="dim_controller_works_exp">
+	EdisonBro Smart Dimmer Controllers are devices that lets user control the dimmer from  anywhere in this world.EdisonBro Smart Dimmer Controllers
+	are programmed to set intensity of light to low,medium or high or to any desired level that user needs it to be, with a single touch through EdisonBro’s mobile app.
+</string>
+
+
+	<string name="Select_Room_Dimmer">
+	Select Room &amp; Dimmer
+	</string>
+
+	<string name="Select_Room_Dimmer_exp">
+	Select the room from the left panel view and operate the configured smart
+	devices in that room. After selecting he room, you will have to select the Dimmer from the device panel.
+	If there are more than two dimmers, then in the device operational panel you can swipe (left or right)and the App shows different Dimmers.
+	The number of dots indicates the total count of Dimmers installed in the selected room.
+
+	</string>
+
+
+	<!--<string name="perform_Operations">
+	Perform Operations
+	</string>
+-->
+	<string name="dim_perform_Operations_exp">
+	Set intensity of light to low,medium or high or to any desired level, with a touch on the icon in the App.
+		Description of each icon is mentioned in the following table.
+	</string>
+
+	<string name="dimmer_Group">
+	Dimmer Group
+	</string>
+
+	<string name="dimmer_Group_exp">
+	• When an Individual Dimmer is configured during installation into a group, it can be operated as Group Dimmer.
+	\n\n• Grouping of Dimmer is done during configuration and installation stage.
+	\n\n• Any number of Dimmer can be added into a Group. All the Groups are included under Group icon.
+	\n\n• This indicates that it is a view pager. Allows the user to identify the number of Dimmer included in a particular Group. When User swipes the screen, it allows the user to switch to another Dimmer .
+	\n\n• The Group Icon indicates that it is a Dimmer Group. It allows the user to identify that the layout is a Dimmer Group layout.
+	</string>
+
+	<string name="dimmer_Individual">
+	Dimmer Individual
+	</string>
+
+	<string name="dimmer_Individual_exp">
+	• All the Single Dimmer are included under Individual icon.
+	\n\n• User can operate all these Dimmers individually, and all Dimmers can be accessed by swiping left or right.
+	\n\n• This indicates that it is a view pager and allows the user to identify a particular Individual Dimmer. When User	swipes the screen, it allows the user to switch to another Individual Dimmer.
+	</string>
+
+
+	<string name="dimmer_Setting">
+	Timer Setting
+	</string>
+
+	<string name="dimmer_Setting_exp">
+	Timer setting lets the user schedule device to operate automatically at preferred time/days/ date. User can set Dimmer to be time operated.
+	</string>
+
+
+	<!--<string name="set_Timer">
+	Set Timer
+	</string>-->
+
+	<string name="dim_set_Timer_exp">
+	Your Dimmer can now be timed to user preferred time period. On press of timer button, the shown layout appears on the screen and the user can set, same or different Timers on  Dimmer as required.
+	</string>
+
+	<string name="dim_set_Timer_exp1">
+	On Press of Settings Operation button, the shown layout appears on the Screen and the user can set intensity that need to be Time operated automatically.
+	</string>
+
+	<string name="dim_set_Timer_exp2">
+	On Press of timer list button,the following layout appears on the Screen.
+	</string>
+
+
+	<!--<string name="change_Settings">
+	Change_Settings :
+	</string>-->
+
+	<string name="dim_change_Settings_exp">
+	Change Settings User can change the settings with a touch of the settings button.
+	On press of setting button, the layout on your right hand appears on the screen with which the user can operate for different settings of the dimmer with the ON/OFF toggle button.
+	The setting option is common and can be used across all the Dimmers.
+	</string>
+
+
+<!--	<string name="mood_Settings">
+	Mood Settings
+	</string>-->
+
+<!--	<string name="mood_Settings_exp">
+	Mood settings let the user to set devices in a room to operate as required to create a perfect aura.
+	</string>
+
+
+	<string name="Set_Moods">
+	Set Moods
+	</string>-->
+
+	<string name="dim_Set_Moods_exp">
+	You can configure different mood based on your requirement for a particular room.
+	\n\nOn long press of Mood button, the following layout appears on the screen and the user can set  Dimmer intensity as per their requirement.
+	</string>
+
+
+	<string name="dim_Set_Moods_exp2">
+	On Press of Mood List button, the shown layout appears on the Screen and the user can select the Dimmer operation to be edited/ deleted in the selected MOOD.
+	</string>
+
+
+	<string name="dim_Set_Moods_exp3">
+	User can configure Dimmer to EdisonBro PIR Sensor to automate the room.
+	\nOnce motion is detected by the PIR Sensor, it will trigger the dimmer to be operated as pre-programmed by the user.
+
+	\n\nThree mood setting option is being provided for the user, he can configure three different mood for every rooms where he has access to.
+
+	\n\nEach user will have his own mood settings in his app.
+
+	\n\nOnce you press MOOD 1 the devices which are in the list will operate as configured.
+
+	\n\nIn this way user can configure multiple devices in a room to a single MOOD setting.
+	</string>
+
+	<string name="dimmer_troubleshoot">
+	My Dimmer Controller is not working:
+	</string>
+
+	<string name="dimmer_troubleshoot_exp">
+	• Check for gateway is turned OFF.
+	\n\n• Check if through EB mobile app the device is turned OFF.
+	</string>
+    <string name="configured_devices">Configured \n Devices</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="room_name">Room Name </string>
+    <string name="device_name">Device Name </string>
+    <string name="on_switches">ON Switches </string>
+    <string name="off_switches">OFF Switches </string>
+    <string name="no_device_found">No Device Found</string>
+    <string name="panel_setting">Panel \n Setting</string>
+
+
+
+
+
+    <string name="pirselectalert">The selected switch is set to TURN ON when motion is detected.\n Do you want to turn it OFF when motion is not detected?</string>
+    <string name="pirselectalert2">The selected switch is set to TURN OFF when motion is detected.\n Do you want to turn it ON when motion is not detected?</string>
+    <string name="skip">Skip</string>
+    <string name="continuestr">Continue</string>
+    <string name="set">Set</string>
+    <string name="yes">Yes!</string>
+    <string name="change_fan_speed">Change Fan Speed</string>
+
+    <string name="change_operation">This Switch is already configured. \n Do you want to modify?</string>
+    <string name="effects">Effects</string>
+    <string name="colours">Colours</string>
+    <string name="on_off">ON/OFF</string>
+    <string name="transaction">Transaction</string>
+    <string name="brightness">Brightness</string>
+    <string name="home">Home</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="orange">Orange</string>
+    <string name="pink">Pink</string>
+    <string name="white">White</string>
+    <string name="flash">Flash</string>
+    <string name="fade">Fade</string>
+    <string name="strobe">Strobe</string>
+    <string name="smooth">Smooth</string>
+    <string name="idle">Idle</string>
+    <string name="motion">Motion</string>
+    <string name="power">RGB Power</string>
+    <string name="rgb_effects">RGB Effects</string>
+    <string name="dimmer_power">Dimmer Power</string>
+    <string name="curtain_action">Curtain Action</string>
+    <string name="power1">Power</string>
+
+
+</resources>

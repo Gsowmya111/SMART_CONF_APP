@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popupbg"
+    android:gravity="center">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="6dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteless"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <edisonbro.com.edisonbroautomation.CheckView
+                android:id="@+id/check"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+
+                app:checkView_strokeColor="@color/holo_green_dark"
+                app:checkView_strokeWidth="2dp" />
+
+
+            <LinearLayout
+                android:id="@+id/alerttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/alertmsg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:padding="5dp"
+
+
+                    android:shadowDx="-1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1.5"
+                    android:text="@string/pirselectalert"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/popuptext"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alerttext">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardcancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentStart="true"
+                     android:layout_alignEnd="@+id/temp"
+                    android:layout_alignStart="@+id/temp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    card_view:cardBackgroundColor="@color/colorPrimaryDark"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/skip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:shadowColor="@color/colorshadow"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.5"
+                        android:shadowRadius="2"
+                        android:text="@string/skip"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/popuptext"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/pirname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:shadowColor="@color/colorshadow"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.5"
+                    android:shadowRadius="2"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/popuptext"
+                    android:textStyle="bold" />
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                     android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:visibility="invisible"
+
+                    card_view:cardBackgroundColor="@color/colorPrimaryDark"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/temptext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:shadowColor="@color/colorshadow"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.5"
+                        android:shadowRadius="2"
+                        android:text="@string/cancel"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/popuptext"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardstop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_toLeftOf="@+id/cardok"
+
+
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    card_view:cardBackgroundColor="@color/colorPrimaryDark"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/curtainstop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:shadowColor="@color/colorshadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:text="Stop"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/popuptext"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentRight="true"
+
+
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    card_view:cardBackgroundColor="@color/colorPrimaryDark"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/pircontinue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:shadowColor="@color/colorshadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:text="@string/yes"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/popuptext"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

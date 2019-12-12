@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            app:srcCompat="@drawable/date2"
+           />
+
+        <TextView
+            android:id="@+id/placeholder1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView2"
+            android:text="Ticket Number"
+            android:textColor="@android:color/transparent"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/ticketno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView2"
+            android:layout_below="@id/placeholder1"
+            android:text="Ticket Number"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            />
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView2"
+            android:layout_below="@id/ticketno"
+            android:text="Subject"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/imageView2"
+            android:background="@android:color/black"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/response"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_layout1"
+            android:paddingLeft="5dp"
+            android:text="View response"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+</RelativeLayout>
